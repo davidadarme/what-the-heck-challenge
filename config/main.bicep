@@ -1,7 +1,6 @@
-@description('Prefijo del nombre que debe tener 5 caracteres alfanuméricos en minúsculas.')
-@minLength(5)
-@maxLength(5)
-param namePrefix string = 'abcde'
+@minLength(3)
+@maxLength(11)
+param namePrefix string
 
 param location string = resourceGroup().location
 
